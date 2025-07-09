@@ -1,0 +1,35 @@
+/*!***********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/scss/admin.scss ***!
+  \***********************************************************************************************************************************************************/
+/* Theme Options Block Preview Styles */
+.dl-preview-container {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid #373737;
+  background: #FFFFFF;
+  min-height: 100px;
+}
+.dl-preview-container img.dl-block-preview-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.dl-preview-container .dl-loading-preview,
+.dl-preview-container .dl-no-preview {
+  padding: 2em;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+.dl-preview-container .dl-error-preview {
+  padding: 2em;
+  text-align: center;
+  color: #DC3232;
+  font-style: italic;
+}
+
+.custom-logo {
+  width: 70px;
+}
+
+/*# sourceMappingURL=admin-style.515060c8affc38baf9de.css.map*/

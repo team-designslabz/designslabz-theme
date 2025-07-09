@@ -1,0 +1,33 @@
+/* Theme Options Block Preview Styles */
+.dl-preview-container {
+	margin-top: 1em;
+	padding: 1em;
+	border: 1px solid #373737;
+	background: #FFFFFF;
+	min-height: 100px;
+
+	img.dl-block-preview-image {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.dl-loading-preview,
+	.dl-no-preview {
+		padding: 2em;
+		text-align: center;
+		color: #666;
+		font-style: italic;
+	}
+
+	.dl-error-preview {
+		padding: 2em;
+		text-align: center;
+		color: #DC3232;
+		font-style: italic;
+	}
+}
+
+.custom-logo {
+	width: 70px;
+}

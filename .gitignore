@@ -1,0 +1,82 @@
+# ----------------------------------
+# System files
+# ----------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+._*
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+
+# ----------------------------------
+# Logs & backups
+# ----------------------------------
+*.log
+*.bak
+*.orig
+*.swp
+*~
+error_log
+
+# ----------------------------------
+# Composer & NPM
+# ----------------------------------
+node_modules/
+vendor/
+.sass-cache/
+
+# ----------------------------------
+# WordPress specific
+# ----------------------------------
+# If your theme contains config files you don’t want to track
+.htaccess
+.htaccess.orig
+maintenance.php
+maintenance.html
+wp-config.php
+wp-config-sample.php
+
+# Auto-generated files
+sitemap.xml
+sitemap.xml.gz
+robots.txt
+/google*.html
+package-lock.json
+
+# Security or verification files
+.well-known/
+
+# ----------------------------------
+# cPanel & FTP leftovers
+# ----------------------------------
+.ftpquota
+
+# ----------------------------------
+# CGI / server scripts (if any)
+# ----------------------------------
+/cgi-bin/
+/cgi/
+
+# ----------------------------------
+# Temp files
+# ----------------------------------
+*.ini
+*.tmp
+*.temp
+
+# ----------------------------------
+# Archives
+# ----------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.rar
+*.7z
+*.bz2
+*.xz
+

@@ -1,0 +1,23 @@
+.error404-container {
+	.error404-header,
+	.error404-content {
+		@include text-center;
+		margin: 0 auto;
+		padding: 4rem 0;
+		border-bottom: 1px solid $bright-gray;
+
+		@include respond(lg) {
+			padding: 8rem 0;
+		}
+	}
+
+	.error404-header {
+		background-color: $bright-gray;
+	}
+
+	.error404-content {
+		@include respond(lg) {
+			max-width: 640px;
+		}
+	}
+}

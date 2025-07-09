@@ -1,0 +1,160 @@
+// =====================================================
+// _mixins.scss
+// Common SCSS mixins for WordPress theme development
+// =====================================================
+
+// -------------------------------------
+// 1. Media Query Breakpoints
+// -------------------------------------
+$breakpoints: (
+	xs: 480px,
+	sm: 640px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1280px,
+);
+
+@mixin respond($breakpoint, $direction: min) {
+	@if map-has-key($breakpoints, $breakpoint) {
+	$size: map-get($breakpoints, $breakpoint);
+
+	@if $direction == min {
+		@media (min-width: $size) {
+		@content;
+		}
+	} @else if $direction == max {
+			@media (max-width: $size) {
+				@content;
+			}
+		} @else {
+			@warn "⚠️ Direction must be 'min' or 'max'. You passed `#{$direction}`.";
+		}
+	} @else {
+		@warn "⚠️ Breakpoint `#{$breakpoint}` not found in $breakpoints.";
+	}
+}
+
+// -------------------------------------
+// 2. Clearfix
+// -------------------------------------
+@mixin clearfix {
+	&::after {
+		display: table;
+		clear: both;
+		content: "";
+	}
+}
+
+// -------------------------------------
+// 3. Visually Hidden (Accessible)
+// -------------------------------------
+@mixin visually-hidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
+// -------------------------------------
+// 4. Absolute Centering
+// -------------------------------------
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// -------------------------------------
+// 5. Flexbox Centering
+// -------------------------------------
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// -------------------------------------
+// 6. Text Truncate / Ellipsis
+// -------------------------------------
+@mixin text-truncate {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// -------------------------------------
+// 7. Aspect Ratio Container
+// -------------------------------------
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+
+	&::before {
+		display: block;
+		padding-top: ($height / $width) * 100%;
+		content: "";
+	}
+
+	> * {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+// -------------------------------------
+// 8. Font Smoothing
+// -------------------------------------
+@mixin font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// -------------------------------------
+// 9. Retina Background Image
+// -------------------------------------
+@mixin retina-bg($file, $ext: "png") {
+	background-image: url("#{$file}.#{$ext}");
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image: url("#{$file}@2x.#{$ext}");
+		background-size: cover;
+	}
+}
+
+// -------------------------------------
+// 10. Transition
+// -------------------------------------
+@mixin transition($props...) {
+	transition: $props;
+}
+
+// -------------------------------------
+// 11. Hide Text (Image Replacement)
+// -------------------------------------
+@mixin hide-text {
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+}
+
+// -------------------------------------
+// 12. Max Lines Clamp
+// -------------------------------------
+@mixin line-clamp($lines) {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+}
+
+// -------------------------------------
+// 13. Text Center
+// -------------------------------------
+@mixin text-center {
+  text-align: center;
+}

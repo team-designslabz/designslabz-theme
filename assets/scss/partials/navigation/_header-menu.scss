@@ -1,0 +1,90 @@
+.wp-block-navigation {
+	.wp-block-navigation__container {
+		display: flex;
+		justify-content: flex-end;
+		gap: 2rem;
+
+		> .wp-block-navigation-item {
+			// Current menu item
+			&.current-menu-ancestor,
+			&.current-menu-item {
+				> a {
+					color: $fiery-rose;
+				}
+
+				&.wp-block-navigation-submenu {
+					.wp-block-navigation__submenu-icon svg {
+						stroke: $fiery-rose;
+					}
+				}
+			}
+
+			// Link styles
+			> a {
+				color: $onyx;
+				transition: all 0.3s ease-in-out;
+
+				&:hover,
+				&:focus {
+					color: $amethyst;
+				}
+			}
+
+			&.wp-block-navigation-submenu {
+				// Submenu toggle button
+				.wp-block-navigation__submenu-icon {
+					svg {
+						width: 12px;
+						height: 12px;
+						transition: all 0.3s ease-in-out;
+						stroke: $onyx;
+
+						path {
+							stroke-width: 2.5;
+						}
+					}
+				}
+
+				&:hover .wp-block-navigation__submenu-icon svg {
+					transform: rotate(180deg);
+					stroke: $amethyst;
+				}
+			}
+
+			&.has-child {
+				.wp-block-navigation__submenu-container {
+					display: flex;
+					justify-content: flex-start;
+					padding: 1.5rem 2rem;
+					gap: 1rem;
+					box-shadow: $box-shadow-medium;
+
+					&.wp-block-navigation-submenu {
+						font-size: 1rem;
+					}
+				}
+
+				.wp-block-navigation-item {
+					min-width: 240px;
+					gap: 2rem;
+
+					&.current-menu-item {
+						a {
+							color: $fiery-rose;
+						}
+					}
+
+					a {
+						color: $onyx;
+						transition: all 0.3s ease-in-out;
+
+						&:hover,
+						&:focus {
+							color: $amethyst;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/*   Maps
+	--------------------------------------------------------------------------  */
+
+/**
+ * Colors
+ */
+$amethyst: #8860D0;
+$fiery-rose: #F05365;
+$onyx: #373737;
+$bright-gray: #EAEAEA;
+$white: #FFFFFF;
+$black: #000000;
+
+$validation-error: #DC3232;
+$validation-success: #4CAF50;
+
+/**
+ * Fonts
+ */
+$base-stack: 'Poppins', sans-serif;
+$heading-stack: 'Acme', sans-serif;
+
+/**
+ * Breakpoints
+ */
+$breakpoint-xs: 480px;  // Extra small devices (phones)
+$breakpoint-s: 768px;   // Small devices (tablets)
+$breakpoint-m: 992px;   // Medium devices (desktops)
+$breakpoint-l: 1200px;  // Large devices (large desktops)
+
+/**
+ * Z-indices
+ */
+$z-index-low: 10;
+$z-index-medium: 100;
+$z-index-high: 1000;
+$z-index-modal: 9999;
+
+// Borders and Shadows
+$border-radius: 4px;
+$box-shadow-light: 0 2px 4px rgba($black, 0.1);
+$box-shadow-medium: 0 4px 8px rgba($black, 0.15);

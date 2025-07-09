@@ -1,0 +1,192 @@
+.archive-header {
+	margin: 0 auto;
+	padding: 4rem 0;
+	border-bottom: 1px solid $bright-gray;
+	background-color: $bright-gray;
+	@include text-center;
+
+	@include respond(lg) {
+		padding: 8rem 0;
+	}
+}
+
+.archive-filter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+	border-bottom: 1px solid $bright-gray;
+	gap: 1rem;
+
+	.search-form {
+		display: flex;
+		overflow: hidden;
+		border: 1px solid $bright-gray;
+		border-radius: 0; // Remove rounded corners
+
+		input[type="search"] {
+			flex: 1 1 auto;
+			padding: 0.75rem 1rem;
+			border: none;
+			color: $onyx;
+			font-size: 1rem;
+
+			&::placeholder {
+				color: lighten($onyx, 30%);
+			}
+
+			&:focus {
+				outline: none;
+				background: lighten($bright-gray, 10%);
+			}
+		}
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left: -8px;
+			padding: 0 1rem;
+			border: none;
+			background: $onyx;
+			color: $white;
+			cursor: pointer;
+			transition: background 0.3s ease;
+
+			svg {
+				display: block;
+			}
+
+			&:hover {
+				background: darken($onyx, 10%);
+			}
+		}
+	}
+
+	.category-filter {
+		select {
+			width: 280px;
+			padding: 0.75rem 1rem;
+			border: 1px solid $bright-gray;
+			border-radius: 4px;
+			background-color: $white;
+			// Custom arrow icon (using inline SVG)
+			background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M2 4l4 4 4-4' stroke='%23373737' stroke-width='1.5' fill='none'/></svg>");
+			background-repeat: no-repeat;
+			background-position: right 1rem center;
+			background-size: 12px;
+			color: $onyx;
+			font-size: 1rem;
+			cursor: pointer;
+			// Smooth transition on focus/hover
+			transition: border-color 0.3s ease, box-shadow 0.3s ease;
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+
+			&:hover {
+				border-color: $amethyst;
+			}
+
+			&:focus {
+				outline: none;
+				border-color: $amethyst;
+				box-shadow: 0 0 0 2px rgba($amethyst, 0.2);
+			}
+		}
+	}
+}
+
+.archive-posts-grid {
+	// Main posts grid container
+	.posts-grid {
+		display: grid;
+		margin: 4rem 0;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	// Each post card
+	.post-card {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+		background: $white;
+		transition: box-shadow 0.3s ease;
+
+		&:hover {
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.post-thumbnail {
+			display: block;
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.entry-header {
+			padding: 1rem 1.25rem 0;
+
+			> a {
+				font-size: 0.75rem;
+			}
+
+			.post-meta {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				color: $onyx;
+				font-size: 0.85rem;
+
+				.category {
+					color: $fiery-rose;
+					font-weight: 600;
+				}
+			}
+
+			.entry-title {
+				margin: 0.5rem 0 0;
+				font-size: 1.75rem;
+
+				a {
+					color: $amethyst;
+					text-decoration: none;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: $fiery-rose;
+					}
+				}
+			}
+		}
+
+		.entry-summary {
+			padding: 0.5rem 1.25rem 0;
+			color: $onyx;
+			font-size: 0.95rem;
+		}
+
+		.entry-footer {
+			margin-top: auto;
+			padding: 1rem 1.25rem 1.25rem;
+
+			.read-more {
+				display: inline-block;
+				color: $fiery-rose;
+				font-size: 0.95rem;
+				font-weight: 600;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

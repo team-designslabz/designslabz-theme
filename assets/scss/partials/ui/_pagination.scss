@@ -1,0 +1,44 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+	gap: 0.5rem;
+
+	.prev,
+	.next {
+		position: relative;
+		top: 2px;
+	}
+
+	.page-numbers {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: 1px solid $bright-gray;
+		border-radius: 4px;
+		color: $onyx;
+		font-size: 1rem;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.3s ease;
+
+		&:hover {
+			border-color: $fiery-rose;
+			background: $fiery-rose;
+			color: $white;
+		}
+
+		svg {
+			fill: currentColor;
+		}
+
+		&.current {
+			border-color: $fiery-rose;
+			background: $fiery-rose;
+			color: $white;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+form {
+	&.frm-fluent-form.ffs_default {
+		.label {
+			color: $onyx;
+		}
+
+		.ff-btn-submit {
+			background-color: $onyx !important;
+			color: $white !important;
+
+			&:hover {
+				background-color: $fiery-rose !important;
+				opacity: 1;
+			}
+		}
+	}
+}
