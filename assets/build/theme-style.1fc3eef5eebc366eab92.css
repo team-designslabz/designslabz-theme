@@ -58,6 +58,13 @@ dd {
   line-height: 1.5555555556;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 ul,
 ol {
   margin: 1em 0;
@@ -220,10 +227,6 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
   margin-left: 0px;
   padding: 4px 16px;
   font-size: 12px;
-}
-
-.custom-logo {
-  width: 70px;
 }
 
 .social-header {
@@ -494,4 +497,4 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=theme-style.5211fe7554d926f0b878.css.map*/
+/*# sourceMappingURL=theme-style.1fc3eef5eebc366eab92.css.map*/

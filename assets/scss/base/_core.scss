@@ -23,6 +23,14 @@ dd {
 	line-height: math.div(28, 18);
 }
 
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 ul,
 ol {
 	margin: 1em 0;
