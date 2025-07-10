@@ -19,9 +19,10 @@ if (!class_exists('DL_Theme')) {
 		}
 
 		/**
-		 * Theme setup: supports (menus removed).
+		 * Theme setup: supports.
 		 */
 		public function setup_theme() {
+			add_theme_support('align-wide');
 			add_theme_support('title-tag');
 			add_theme_support('post-thumbnails');
 			add_theme_support('html5', ['search-form', 'gallery', 'caption']);

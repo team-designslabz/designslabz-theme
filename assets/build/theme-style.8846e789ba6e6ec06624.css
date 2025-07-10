@@ -61,9 +61,6 @@ dd {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 ul,
 ol {
@@ -99,12 +96,29 @@ ul ol {
   list-style-type: decimal;
 }
 
-.main .wp-block-columns .wp-block-column {
+.main .wp-block-columns .wp-block-column,
+.footer .wp-block-columns .wp-block-column {
   padding: 16px 32px;
 }
 @media (min-width: 1024px) {
-  .main .wp-block-columns .wp-block-column {
+  .main .wp-block-columns .wp-block-column,
+  .footer .wp-block-columns .wp-block-column {
     padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-center {
+    text-align: center;
+  }
+  .mobile-center p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-hide {
+    display: none;
   }
 }
 
@@ -497,4 +511,4 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=theme-style.1fc3eef5eebc366eab92.css.map*/
+/*# sourceMappingURL=theme-style.8846e789ba6e6ec06624.css.map*/

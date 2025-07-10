@@ -25,10 +25,6 @@ dd {
 
 a {
 	text-decoration: none;
-
-	&:hover {
-		text-decoration: underline;
-	}
 }
 
 ul,
@@ -70,7 +66,8 @@ ul ol {
 	list-style-type: decimal;
 }
 
-.main {
+.main,
+.footer {
 	.wp-block-columns {
 		.wp-block-column {
 			padding: 16px 32px;
@@ -79,5 +76,21 @@ ul ol {
 				padding: 32px;
 			}
 		}
+	}
+}
+
+.mobile-center {
+	@include respond(md, max) {
+		p {
+			text-align: center;
+		}
+
+		text-align: center;
+	}
+}
+
+.mobile-hide {
+	@include respond(md, max) {
+		display: none;
 	}
 }
