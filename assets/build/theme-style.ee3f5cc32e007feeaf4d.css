@@ -43,6 +43,19 @@ h4,
 h5,
 h6 {
   color: #8860D0;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 pre,
@@ -94,6 +107,11 @@ ol ul {
 
 ul ol {
   list-style-type: decimal;
+}
+
+figcaption {
+  font-size: 18px;
+  color: #F05365;
 }
 
 .main .wp-block-columns .wp-block-column,
@@ -511,4 +529,43 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=theme-style.8846e789ba6e6ec06624.css.map*/
+.blog-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  margin-bottom: 3rem;
+  background-color: #EAEAEA;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .blog-header {
+    margin-bottom: 6rem;
+  }
+}
+
+.blog-content {
+  margin-bottom: 3rem;
+}
+@media (min-width: 1024px) {
+  .blog-content {
+    margin-bottom: 6rem;
+  }
+}
+.blog-content .post-navigation {
+  margin: 2rem 0;
+}
+@media (min-width: 1024px) {
+  .blog-content .post-navigation {
+    margin: 4rem 0;
+  }
+}
+.blog-content .post-navigation .nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*# sourceMappingURL=theme-style.ee3f5cc32e007feeaf4d.css.map*/

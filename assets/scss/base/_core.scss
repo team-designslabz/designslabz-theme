@@ -8,6 +8,13 @@ h4,
 h5,
 h6 {
 	color: $amethyst;
+	margin-top: 24px;
+	margin-bottom: 16px;
+
+	@include respond(lg) {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
 }
 
 pre,
@@ -64,6 +71,11 @@ ol ul {
 
 ul ol {
 	list-style-type: decimal;
+}
+
+figcaption {
+	font-size: 18px;
+	color: $fiery-rose;
 }
 
 .main,
