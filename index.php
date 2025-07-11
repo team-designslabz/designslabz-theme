@@ -75,9 +75,13 @@ get_header();
 					the_post();
 					?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class('post-card'); ?>>
-						<?php if (has_post_thumbnail()) : ?>
+						<?php if ( has_post_thumbnail() ) : ?>
 							<a href="<?php the_permalink(); ?>" class="post-thumbnail">
 								<?php the_post_thumbnail('medium_large'); ?>
+							</a>
+						<?php else : ?>
+							<a href="<?php the_permalink(); ?>" class="post-thumbnail">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/designslabz.png" alt="<?php the_title_attribute(); ?>">
 							</a>
 						<?php endif; ?>
 						<div class="entry-header">
