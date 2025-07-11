@@ -1,20 +1,20 @@
 .social-header {
-    padding: 0 32px;
-    border-bottom: 1px solid $bright-gray;
+	padding: 0 32px;
+	border-bottom: 1px solid $bright-gray;
 
-    .wp-block-social-links {
-        .wp-social-link {
-            svg {
-                width: 16px;
-                height: 16px;
-            }
-        }
-    }
+	.wp-block-social-links {
+		.wp-social-link {
+			svg {
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
 }
 
 .main-header-container {
-    .inner-header-container {
-        padding: 0 32px;
-        border-bottom: 1px solid $bright-gray;
-    }
+	.inner-header-container {
+		padding: 0 32px;
+		border-bottom: 1px solid $bright-gray;
+	}
 }

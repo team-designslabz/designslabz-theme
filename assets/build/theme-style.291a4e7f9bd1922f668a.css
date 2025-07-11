@@ -42,9 +42,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: #8860D0;
   margin-top: 24px;
   margin-bottom: 16px;
+  color: #8860D0;
 }
 @media (min-width: 1024px) {
   h1,
@@ -109,9 +109,11 @@ ul ol {
   list-style-type: decimal;
 }
 
-figcaption {
-  font-size: 18px;
+figcaption a {
   color: #F05365;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: none;
 }
 
 .main .wp-block-columns .wp-block-column,
@@ -207,8 +209,8 @@ form.frm-fluent-form.ffs_default .ff-btn-submit {
   color: #FFFFFF !important;
 }
 form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
-  background-color: #F05365 !important;
   opacity: 1;
+  background-color: #F05365 !important;
 }
 
 .pagination {
@@ -314,8 +316,8 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
   display: flex;
   justify-content: flex-start;
   padding: 1.5rem 2rem;
-  gap: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  gap: 1rem;
 }
 .wp-block-navigation .wp-block-navigation__container > .wp-block-navigation-item.has-child .wp-block-navigation__submenu-container.wp-block-navigation-submenu {
   font-size: 1rem;
@@ -345,10 +347,10 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
     ==========================================================================  */
 .error404-container .error404-header,
 .error404-container .error404-content {
-  text-align: center;
   margin: 0 auto;
   padding: 4rem 0;
   border-bottom: 1px solid #EAEAEA;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   .error404-container .error404-header,
@@ -568,4 +570,4 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
   width: 100%;
 }
 
-/*# sourceMappingURL=theme-style.ee3f5cc32e007feeaf4d.css.map*/
+/*# sourceMappingURL=theme-style.291a4e7f9bd1922f668a.css.map*/

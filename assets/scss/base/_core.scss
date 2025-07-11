@@ -7,9 +7,9 @@ h3,
 h4,
 h5,
 h6 {
-	color: $amethyst;
 	margin-top: 24px;
 	margin-bottom: 16px;
+	color: $amethyst;
 
 	@include respond(lg) {
 		margin-top: 40px;
@@ -74,8 +74,12 @@ ul ol {
 }
 
 figcaption {
-	font-size: 18px;
-	color: $fiery-rose;
+	a {
+		color: $fiery-rose;
+		font-size: 20px;
+		font-weight: bold;
+		text-shadow: none;
+	}
 }
 
 .main,
@@ -93,11 +97,11 @@ figcaption {
 
 .mobile-center {
 	@include respond(md, max) {
+
+		text-align: center;
 		p {
 			text-align: center;
 		}
-
-		text-align: center;
 	}
 }
 
