@@ -73,12 +73,31 @@ ul ol {
 	list-style-type: decimal;
 }
 
-figcaption {
-	a {
-		color: $fiery-rose;
-		font-size: 20px;
-		font-weight: bold;
-		text-shadow: none;
+.wp-block-latest-posts {
+	li {
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	}
+
+	.wp-block-latest-posts__post-title,
+	.wp-block-latest-posts__post-author,
+	.wp-block-latest-posts__post-excerpt {
+		padding: 0 32px;
+	}
+
+	.wp-block-latest-posts__post-excerpt {
+		padding-bottom: 32px;
+	}
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image {
+	figcaption {
+		a {
+			color: $fiery-rose;
+			font-size: 20px;
+			font-weight: bold;
+			text-shadow: none;
+		}
 	}
 }
 

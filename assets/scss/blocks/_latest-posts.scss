@@ -1,0 +1,64 @@
+// 🧩 Latest Posts Block Custom Card
+.wp-block-latest-posts {
+	&.is-grid {
+		li {
+			display: flex;
+			flex-direction: column;
+			padding: 2rem;
+			border-radius: 12px;
+			box-shadow: $box-shadow-medium;
+			background: $white;
+			transition: transform 0.3s ease;
+
+			&:hover {
+				transform: translateY(-4px);
+			}
+
+			// Featured Image
+			.wp-block-latest-posts__featured-image {
+				margin-bottom: 1rem;
+				text-align: center;
+
+				img {
+					max-width: 180px;
+					border-radius: 6px;
+				}
+			}
+
+			// Title
+			.wp-block-latest-posts__post-title {
+				display: block;
+				color: $amethyst;
+				font-size: 1.75rem;
+				font-weight: 700;
+				text-decoration: none;
+			}
+
+			// Author
+			.wp-block-latest-posts__post-author {
+				color: $fiery-rose;
+				font-size: 0.9rem;
+			}
+
+			// Excerpt
+			.wp-block-latest-posts__post-excerpt {
+				flex-grow: 1;
+				color: $onyx;
+				font-size: 1rem;
+			}
+
+			// Read More Link
+			.wp-block-latest-posts__read-more {
+				display: block;
+				margin-top: 2rem;
+			}
+
+			.wp-block-latest-posts__post-title,
+			.wp-block-latest-posts__post-author,
+			.wp-block-latest-posts__post-excerpt {
+				margin: 0;
+				padding: 0.5rem 0;
+			}
+		}
+	}
+}

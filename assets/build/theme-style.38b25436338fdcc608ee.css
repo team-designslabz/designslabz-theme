@@ -109,7 +109,20 @@ ul ol {
   list-style-type: decimal;
 }
 
-figcaption a {
+.wp-block-latest-posts li {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.wp-block-latest-posts .wp-block-latest-posts__post-title,
+.wp-block-latest-posts .wp-block-latest-posts__post-author,
+.wp-block-latest-posts .wp-block-latest-posts__post-excerpt {
+  padding: 0 32px;
+}
+.wp-block-latest-posts .wp-block-latest-posts__post-excerpt {
+  padding-bottom: 32px;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption a {
   color: #F05365;
   font-size: 20px;
   font-weight: bold;
@@ -341,6 +354,53 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
      BLOCKS
      Self-contained layout pieces
     ==========================================================================  */
+.wp-block-latest-posts.is-grid li {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+  transition: transform 0.3s ease;
+}
+.wp-block-latest-posts.is-grid li:hover {
+  transform: translateY(-4px);
+}
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__featured-image {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__featured-image img {
+  max-width: 180px;
+  border-radius: 6px;
+}
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__post-title {
+  display: block;
+  color: #8860D0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__post-author {
+  color: #F05365;
+  font-size: 0.9rem;
+}
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__post-excerpt {
+  flex-grow: 1;
+  color: #373737;
+  font-size: 1rem;
+}
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__read-more {
+  display: block;
+  margin-top: 2rem;
+}
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__post-title,
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__post-author,
+.wp-block-latest-posts.is-grid li .wp-block-latest-posts__post-excerpt {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
 /*  ==========================================================================
      TEMPLATES
      Full custom templates
@@ -570,4 +630,4 @@ form.frm-fluent-form.ffs_default .ff-btn-submit:hover {
   width: 100%;
 }
 
-/*# sourceMappingURL=theme-style.291a4e7f9bd1922f668a.css.map*/
+/*# sourceMappingURL=theme-style.38b25436338fdcc608ee.css.map*/
