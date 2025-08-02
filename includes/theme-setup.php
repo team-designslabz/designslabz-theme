@@ -30,6 +30,7 @@ if (!class_exists('DL_Theme')) {
 			add_theme_support('editor-styles');
 			add_theme_support('wp-block-styles');
 			add_theme_support('responsive-embeds');
+			remove_theme_support('core-block-patterns');
 		}
 
 		/**
